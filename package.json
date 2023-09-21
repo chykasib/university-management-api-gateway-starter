@@ -5,7 +5,7 @@
   "author": "Programming Hero",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon --watch 'src/**/*.ts' --ignore 'src/**/*.spec.ts' --exec 'ts-node' -T ./src/server.ts",
+    "start": "ts-node-dev --respawn --transpile-only src/server.ts",
     "build": "tsc"
   },
   "dependencies": {
@@ -25,6 +25,7 @@
     "morgan": "^1.10.0",
     "multer": "^1.4.5-lts.1",
     "redis": "^4.6.6",
+    "ts-node-dev": "^2.0.0",
     "winston": "^3.8.2",
     "winston-daily-rotate-file": "^4.7.1",
     "zod": "^3.21.4"
@@ -48,7 +49,7 @@
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^4.2.1",
     "fs": "^0.0.1-security",
-    "nodemon": "^2.0.22",
+    "nodemon": "^3.0.1",
     "path": "^0.12.7",
     "prettier": "^2.8.8",
     "rimraf": "^5.0.0",
